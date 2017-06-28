@@ -6,10 +6,14 @@
 	<packaging>war</packaging>
 	<name>bluesking-plugin-security</name>
 	<url>http://maven.apache.org</url>
+	
+	
 	<!-- 参数配置 -->
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+	
+	
 	<dependencies>
 		<!-- Apache Shiro Web 安全控制框架 -->
 		<dependency>
@@ -38,6 +42,8 @@
 		    <scope>provided</scope>
 		</dependency>
 	</dependencies>
+	
+	
 	<build>
 		<finalName>bluesking</finalName>
 		<plugins>
