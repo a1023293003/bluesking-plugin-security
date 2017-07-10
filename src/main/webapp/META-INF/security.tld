@@ -25,9 +25,45 @@
 	</tag>
 	
 	<tag>
+		<description>判断当前用户是否拥有其中某一种角色(逗号分隔,表示"与"的关系)</description>
+		<name>hasAnyRoles</name>
+		<tag-class>org.apache.shiro.web.tags.HasAnyRolesTag</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<name>name</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
 		<description>判断当前用户是否拥有其中所有角色(逗号分隔,表示"与"的关系)</description>
 		<name>hasAllRoles</name>
 		<tag-class>cn.bluesking.plugin.security.tag.HasAllRolesTag</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<name>name</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	<tag>
+		<description>判断当前用户是否拥有其中某一种权限(逗号分隔,表示"与"的关系)</description>
+		<name>hasAnyPermissions</name>
+		<tag-class>cn.bluesking.plugin.security.tag.HasAnyPermissionsTag</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<name>name</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	<tag>
+		<description>判断当前用户是否拥有其中所有权限(逗号分隔,表示"与"的关系)</description>
+		<name>hasAllPermissions</name>
+		<tag-class>cn.bluesking.plugin.security.tag.HasAllPermissionsTag</tag-class>
 		<body-content>JSP</body-content>
 		<attribute>
 			<name>name</name>
